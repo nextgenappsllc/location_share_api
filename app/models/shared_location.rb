@@ -1,0 +1,2 @@
+class SharedLocation < ApplicationRecord
+end
