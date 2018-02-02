@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Development project providing the api for "https://github.com/nextgenappsllc/LocationShare"
 
-Things you may want to cover:
 
-* Ruby version
+## Setup
 
-* System dependencies
+`git clone https://github.com/nextgenappsllc/location_share_api.git`
 
-* Configuration
+`cd location_share_api`
 
-* Database creation
+`bundle install`
 
-* Database initialization
+Set your `MYSQL_USER` and `MYSQL_PW` in "config/application.yml".
 
-* How to run the test suite
+`bundle exec rake db:create`
 
-* Services (job queues, cache servers, search engines, etc.)
+`bundle exec rake db:schema:load`
 
-* Deployment instructions
+Then start your rails server!
 
-* ...
+
+## Pending
+* Tests!
+
+* Move code for channel broadcast to async job with service
+
+* Authentication/Security
+
